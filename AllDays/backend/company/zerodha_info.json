@@ -1,0 +1,51 @@
+{
+  "company": "Zerodha",
+  "description": "Zerodha is India's largest stock brokerage platform, offering discount trading services for stocks, derivatives, mutual funds, and more. It is known for its transparent pricing and technology-driven trading ecosystem.",
+  "products": {
+    "Daily Savings": "Not applicable for Zerodha; users can instead invest small amounts via mutual funds and SIPs",
+    "Digital Gold": "Zerodha users can buy and sell digital gold via its partner platform, GoldRush by Kshitij",
+    "Jar App": "Zerodha's primary platform is the Kite app, offering advanced charting and trading tools",
+    "Auto-Save": "Users can automate investments through SIPs in mutual funds using Coin, Zerodha’s investment platform"
+  },
+  "pricing": {
+    "Account Opening": "Equity account opening is free during offers; otherwise nominal charges apply",
+    "Savings": "Investing in mutual funds via Coin is completely free",
+    "Digital Gold Purchase": "Digital gold purchase involves standard partner charges; Zerodha does not levy additional fees",
+    "Gold Storage": "Secure storage handled by the gold partner with standard vaulting fees included",
+    "Withdrawal": "No withdrawal fee for selling gold; brokerage charges apply on market trades"
+  },
+  "faq": [
+    {
+      "question": "What is Zerodha?",
+      "answer": "Zerodha is India's leading discount broker, offering low-cost trading and investment services across equity, F&O, commodities, currency, and mutual funds."
+    },
+    {
+      "question": "How does Zerodha work?",
+      "answer": "Users open a trading and Demat account, add funds, and can buy or sell stocks and other instruments through the Kite web or mobile platform."
+    },
+    {
+      "question": "Is there any minimum amount to start?",
+      "answer": "There is no minimum amount required to open an account or start trading. Users can begin buying stocks with any amount allowed by the market."
+    },
+    {
+      "question": "How much does Zerodha cost?",
+      "answer": "Equity delivery trades are free, while intraday and F&O trades cost ₹20 per order or 0.03%, whichever is lower."
+    },
+    {
+      "question": "Is my money safe with Zerodha?",
+      "answer": "Yes, Zerodha is a SEBI-registered broker, and all client securities are held safely in NSDL/CDSL depositories. Funds remain in segregated client accounts."
+    },
+    {
+      "question": "Can I withdraw my money anytime?",
+      "answer": "Yes, withdrawals can be initiated through the Zerodha console. Funds are transferred to the registered bank account within standard settlement timelines."
+    },
+    {
+      "question": "What is digital gold?",
+      "answer": "Digital gold represents 24K gold stored securely in vaults. Zerodha enables buying/selling digital gold through its partner GoldRush."
+    },
+    {
+      "question": "Do you have a mobile app?",
+      "answer": "Yes, Zerodha offers the Kite trading app and the Coin mutual fund investment app on both Android and iOS."
+    }
+  ]
+}
