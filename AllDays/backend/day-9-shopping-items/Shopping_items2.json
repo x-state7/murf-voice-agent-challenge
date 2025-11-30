@@ -1,0 +1,25 @@
+{
+  "order_number": 2,
+  "timestamp": "2025-11-30T18:11:07.329390",
+  "items": [
+    {
+      "item": "Cocoa-red leather handbag",
+      "quantity": 1,
+      "price": "400 dollars",
+      "timestamp": "2025-11-30T18:09:41.095833"
+    },
+    {
+      "item": "t-shirt",
+      "quantity": 1,
+      "price": "500 dollars",
+      "timestamp": "2025-11-30T18:10:04.590999"
+    },
+    {
+      "item": "chocolate",
+      "quantity": 1,
+      "price": "600 rupees",
+      "timestamp": "2025-11-30T18:10:28.449629"
+    }
+  ],
+  "total_items": 3
+}
