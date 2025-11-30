@@ -1,0 +1,25 @@
+{
+  "order_number": 4,
+  "timestamp": "2025-11-30T18:37:43.631583",
+  "items": [
+    {
+      "item": "chocolate",
+      "quantity": 1,
+      "price": "600 rupees",
+      "timestamp": "2025-11-30T18:35:39.596042"
+    },
+    {
+      "item": "chocolate",
+      "quantity": 1,
+      "price": "six hundred rupees",
+      "timestamp": "2025-11-30T18:36:31.038221"
+    },
+    {
+      "item": "perfume",
+      "quantity": 1,
+      "price": "one thousand rupees",
+      "timestamp": "2025-11-30T18:36:43.424436"
+    }
+  ],
+  "total_items": 3
+}
