@@ -1,0 +1,63 @@
+{
+  "session_id": "7355e3cb",
+  "player_name": "James",
+  "started_at": "2025-12-02T03:34:42.218926Z",
+  "ended_at": "2025-12-02T03:41:55.791115Z",
+  "total_rounds": 2,
+  "max_rounds": 2,
+  "rounds": [
+    {
+      "round": 1,
+      "scenario": "You are a barista who has to tell a customer that their latte is actually a portal to another dimension.",
+      "performance": "I will say that, uh, you have a magic drink. You somebody just dropped some drops off or another dimension thing. And you are going into the another dimension. So please stop taking that.",
+      "reaction": "Okay \u2014 bold commitment, but that felt a bit rushed. Try to make stronger choices next time. Don't be afraid to exaggerate."
+    },
+    {
+      "round": 2,
+      "scenario": "You are a restaurant waiter who must calmly tell a customer that their order has escaped the kitchen.",
+      "performance": "I will, uh, say to customer that, uh, please don't be in a hurry. Be patient. And the order will be soon come as soon as possible because many, uh, workers of mine are currently busy, and I will arrange you your order as soon as possible. So don't be impatient. Be patient.",
+      "reaction": "Love that \u2014 bold commitment! That was playful and clear. Nice work. Ready for the next one?"
+    }
+  ],
+  "history": [
+    {
+      "time": "2025-12-02T03:36:04.596886Z",
+      "action": "start_show",
+      "name": "James"
+    },
+    {
+      "time": "2025-12-02T03:36:04.609481Z",
+      "action": "present_scenario",
+      "round": 1,
+      "scenario": "You are a barista who has to tell a customer that their latte is actually a portal to another dimension."
+    },
+    {
+      "time": "2025-12-02T03:36:52.815224Z",
+      "action": "record_performance",
+      "round": 1
+    },
+    {
+      "time": "2025-12-02T03:37:20.242341Z",
+      "action": "present_scenario",
+      "round": 2,
+      "scenario": "You are a restaurant waiter who must calmly tell a customer that their order has escaped the kitchen."
+    },
+    {
+      "time": "2025-12-02T03:38:09.860310Z",
+      "action": "record_performance",
+      "round": 2
+    },
+    {
+      "time": "2025-12-02T03:38:09.861702Z",
+      "action": "summarize_show"
+    },
+    {
+      "time": "2025-12-02T03:38:13.177706Z",
+      "action": "stop_show"
+    },
+    {
+      "time": "2025-12-02T03:39:50.078985Z",
+      "action": "summarize_show"
+    }
+  ]
+}

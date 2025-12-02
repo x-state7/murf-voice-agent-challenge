@@ -1,0 +1,51 @@
+{
+  "session_id": "037a48a2",
+  "player_name": "James",
+  "started_at": "2025-12-02T03:22:54.821659Z",
+  "ended_at": "2025-12-02T03:28:23.351857Z",
+  "total_rounds": 2,
+  "max_rounds": 3,
+  "rounds": [
+    {
+      "round": 1,
+      "scenario": "You are a medieval king reacting to a very modern delivery service showing up at court.",
+      "performance": "Well, I think first, I will surprise. Then I will ask this delivery guy that who are you and what are what kind of things you are doing.",
+      "reaction": "Hmm \u2014 unexpected twist. That landed in parts; you had interesting ideas. Let's try the next scene and lean into one choice."
+    },
+    {
+      "round": 2,
+      "scenario": "You are a detective interrogating a suspect who only answers in awkward metaphors.",
+      "performance": "I think well, first, I will ask wisely. If he, she will not give me the answer. I will use government power or something that I should blackmail him or and then I will take the information from",
+      "reaction": "Love that \u2014 nice character choices! That was playful and clear. Nice work. Ready for the next one?"
+    }
+  ],
+  "history": [
+    {
+      "time": "2025-12-02T03:24:29.682174Z",
+      "action": "start_show",
+      "name": "James"
+    },
+    {
+      "time": "2025-12-02T03:24:29.682353Z",
+      "action": "present_scenario",
+      "round": 1,
+      "scenario": "You are a medieval king reacting to a very modern delivery service showing up at court."
+    },
+    {
+      "time": "2025-12-02T03:25:59.526903Z",
+      "action": "record_performance",
+      "round": 1
+    },
+    {
+      "time": "2025-12-02T03:26:38.609469Z",
+      "action": "present_scenario",
+      "round": 2,
+      "scenario": "You are a detective interrogating a suspect who only answers in awkward metaphors."
+    },
+    {
+      "time": "2025-12-02T03:27:40.118099Z",
+      "action": "record_performance",
+      "round": 2
+    }
+  ]
+}

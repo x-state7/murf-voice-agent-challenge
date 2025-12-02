@@ -1,61 +1,165 @@
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { Button } from '@/components/livekit/button';
 
-function WelcomeImage() {
+function ImprovIcon() {
   return (
     <svg
-      width="64"
-      height="64"
+      width="90"
+      height="90"
       viewBox="0 0 64 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-fg0 mb-4 size-16"
+      className="mx-auto mb-8 drop-shadow-2xl"
+      style={{
+        background:
+          'linear-gradient(135deg, #ff0000 0%, #ff7f00 14%, #ffff00 28%, #00ff00 42%, #0000ff 57%, #4b0082 71%, #9400d3 85%, #ff0000 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+      }}
     >
       <path
-        d="M15 24V40C15 40.7957 14.6839 41.5587 14.1213 42.1213C13.5587 42.6839 12.7956 43 12 43C11.2044 43 10.4413 42.6839 9.87868 42.1213C9.31607 41.5587 9 40.7957 9 40V24C9 23.2044 9.31607 22.4413 9.87868 21.8787C10.4413 21.3161 11.2044 21 12 21C12.7956 21 13.5587 21.3161 14.1213 21.8787C14.6839 22.4413 15 23.2044 15 24ZM22 5C21.2044 5 20.4413 5.31607 19.8787 5.87868C19.3161 6.44129 19 7.20435 19 8V56C19 56.7957 19.3161 57.5587 19.8787 58.1213C20.4413 58.6839 21.2044 59 22 59C22.7956 59 23.5587 58.6839 24.1213 58.1213C24.6839 57.5587 25 56.7957 25 56V8C25 7.20435 24.6839 6.44129 24.1213 5.87868C23.5587 5.31607 22.7956 5 22 5ZM32 13C31.2044 13 30.4413 13.3161 29.8787 13.8787C29.3161 14.4413 29 15.2044 29 16V48C29 48.7957 29.3161 49.5587 29.8787 50.1213C30.4413 50.6839 31.2044 51 32 51C32.7956 51 33.5587 50.6839 34.1213 50.1213C34.6839 49.5587 35 48.7957 35 48V16C35 15.2044 34.6839 14.4413 34.1213 13.8787C33.5587 13.3161 32.7956 13 32 13ZM42 21C41.2043 21 40.4413 21.3161 39.8787 21.8787C39.3161 22.4413 39 23.2044 39 24V40C39 40.7957 39.3161 41.5587 39.8787 42.1213C40.4413 42.6839 41.2043 43 42 43C42.7957 43 43.5587 42.6839 44.1213 42.1213C44.6839 41.5587 45 40.7957 45 40V24C45 23.2044 44.6839 22.4413 44.1213 21.8787C43.5587 21.3161 42.7957 21 42 21ZM52 17C51.2043 17 50.4413 17.3161 49.8787 17.8787C49.3161 18.4413 49 19.2044 49 20V44C49 44.7957 49.3161 45.5587 49.8787 46.1213C50.4413 46.6839 51.2043 47 52 47C52.7957 47 53.5587 46.6839 54.1213 46.1213C54.6839 45.5587 55 44.7957 55 44V20C55 19.2044 54.6839 18.4413 54.1213 17.8787C53.5587 17.3161 52.7957 17 52 17Z"
+        d="M32 8C32 6.93913 31.5786 5.92172 30.8284 5.17157C30.0783 4.42143 29.0609 4 28 4C26.9391 4 25.9217 4.42143 25.1716 5.17157C24.4214 5.92172 24 6.93913 24 8V12C24 13.0609 24.4214 14.0783 25.1716 14.8284C25.9217 15.5786 26.9391 16 28 16H36C37.0609 16 38.0783 15.5786 38.8284 14.8284C39.5786 14.0783 40 13.0609 40 12V8C40 6.93913 39.5786 5.92172 38.8284 5.17157C38.0783 4.42143 37.0609 4 36 4C34.9391 4 33.9217 4.42143 33.1716 5.17157C32.4214 5.92172 32 6.93913 32 8ZM52 20H12C10.9391 20 9.92172 20.4214 9.17157 21.1716C8.42143 21.9217 8 22.9391 8 24V52C8 53.0609 8.42143 54.0783 9.17157 54.8284C9.92172 55.5786 10.9391 56 12 56H52C53.0609 56 54.0783 55.5786 54.8284 54.8284C55.5786 54.0783 56 53.0609 56 52V24C56 22.9391 55.5783 21.9217 54.8284 21.1716C54.0783 20.4214 53.0609 20 52 20ZM48 48H16V28H48V48Z"
         fill="currentColor"
+      />
+      <circle cx="22" cy="35" r="2" fill="currentColor" />
+      <circle cx="32" cy="35" r="2" fill="currentColor" />
+      <circle cx="42" cy="35" r="2" fill="currentColor" />
+      <path
+        d="M22 42C22 42 26 45 32 45C38 45 42 42 42 42"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );
 }
 
-interface WelcomeViewProps {
-  startButtonText: string;
-  onStartCall: () => void;
-}
+type WelcomeViewProps = {
+  onStartCall: (name: string) => void;
+};
 
-export const WelcomeView = ({
-  startButtonText,
-  onStartCall,
-  ref,
-}: React.ComponentProps<'div'> & WelcomeViewProps) => {
+export const WelcomeView = React.forwardRef<HTMLDivElement, WelcomeViewProps>((props, ref) => {
+  const [name, setName] = useState('');
+  const [started, setStarted] = useState(false);
+
+  // rainbow keyframes for the button background
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes rainbow-shift {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 200% 50%; }
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
+  const handleStart = () => {
+    if (!name.trim() || started) return;
+    setStarted(true);
+    setTimeout(() => {
+      props.onStartCall(name.trim());
+    }, 900);
+  };
+
   return (
-    <div ref={ref}>
-      <section className="bg-background flex flex-col items-center justify-center text-center">
-        <WelcomeImage />
+    <div
+      ref={ref}
+      className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black text-white"
+    >
+      {/* Rainbow background glow */}
+      <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 via-yellow-900/10 via-green-900/10 via-cyan-900/10 via-blue-900/10 to-purple-900/20" />
 
-        <p className="text-foreground max-w-prose pt-1 leading-6 font-medium">
-          Chat live with your voice AI agent
-        </p>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
+        className="relative z-10 w-full max-w-md"
+      >
+        <div
+          className="relative overflow-hidden rounded-3xl border border-transparent bg-black/80 p-12 shadow-2xl backdrop-blur-2xl"
+          style={{
+            borderImage:
+              'linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff) 1',
+          }}
+        >
+          <ImprovIcon />
 
-        <Button variant="primary" size="lg" onClick={onStartCall} className="mt-6 w-64 font-mono">
-          {startButtonText}
-        </Button>
-      </section>
+          <h2 className="mb-3 text-center text-5xl font-black tracking-tight">
+            <span className="bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
+              Improv Battle
+            </span>
+          </h2>
 
-      <div className="fixed bottom-5 left-0 flex w-full items-center justify-center">
-        <p className="text-muted-foreground max-w-prose pt-1 text-xs leading-5 font-normal text-pretty md:text-sm">
-          Need help getting set up? Check out the{' '}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs.livekit.io/agents/start/voice-ai/"
-            className="underline"
-          >
-            Voice AI quickstart
-          </a>
-          .
-        </p>
-      </div>
+          <p className="mb-10 text-center text-lg font-medium text-white/70">
+            Enter your name to start the show
+          </p>
+
+          <div className="space-y-6">
+            <div>
+              <label className="mb-3 block text-center text-sm font-bold tracking-widest uppercase bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                Your Stage Name
+              </label>
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && handleStart()}
+                placeholder="Type your name..."
+                className="w-full rounded-2xl border-2 bg-black/50 px-6 py-5 text-center text-lg font-semibold text-white backdrop-blur-xl transition-all placeholder:text-white/40 focus:ring-4 focus:outline-none"
+                style={{
+                  borderImage:
+                    'linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff) 1',
+                  boxShadow: '0 0 20px rgba(255, 0, 255, 0.3)',
+                }}
+              />
+            </div>
+
+            <Button
+              onClick={handleStart}
+              disabled={!name.trim() || started}
+              className="relative w-full overflow-hidden rounded-2xl bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-cyan-500 via-blue-500 to-purple-500 py-6 text-2xl font-black tracking-wider text-white uppercase shadow-xl transition-all hover:scale-105 active:scale-95 disabled:opacity-50"
+              style={{
+                backgroundSize: '200% 100%',
+                animation: 'rainbow-shift 3s linear infinite',
+              } as React.CSSProperties}
+            >
+              <motion.div
+                className="absolute inset-0 bg-white/20"
+                animate={{ x: [-400, 400] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: 'linear' }}
+              />
+              <span className="relative">{started ? 'Starting...' : "LET'S GO"}</span>
+            </Button>
+          </div>
+
+          <p className="mt-8 text-center font-mono text-xs tracking-widest uppercase bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+            Press Enter to continue
+          </p>
+        </div>
+      </motion.div>
+
+      {/* Clean loading screen */}
+      {started && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="absolute inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
+        >
+          <div className="text-center">
+            <p className="mb-4 animate-pulse text-4xl font-black drop-shadow-2xl bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+              Getting things ready...
+            </p>
+            <p className="text-lg text-white/60">Preparing your improv scenarios</p>
+          </div>
+        </motion.div>
+      )}
     </div>
   );
-};
+});
+
+WelcomeView.displayName = 'WelcomeView';
